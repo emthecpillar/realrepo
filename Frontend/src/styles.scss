@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* You can add global styles to this file, and also import other style files */
+
+/*
+TODO: 
+Need to fix all of these variables and general sass
+throughout project. This is easily the worst part of
+this application because I've mostly just been 
+experimenting and leaving mass amounts of unused code 
+behind.
+*/ 
+$primary-color: #fbeaff;
+$light-accent-color: #fbeaff;
+$dark-accent-color: #b39cd0;
+//$contrast-color: #00C2A9;
+$main-color: #8675a9;
+$contrast-color: #8675a9;
+$light-grey: #fcf7ff;
+$dark-grey: #4b4453;
+$delete-red: #ff4d74;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	width: 0;
+	background: transparent;
+}
+
+p,
+mat-label,
+.mat-typography p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6 {
+	margin: 0px;
+	padding: 0px;
+	color: $dark-grey;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+input,
+textarea,
+select:focus {
+	font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+html,
+body {
+	height: 100%;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-width: 100vw;
+}
+body {
+	background-color: #ffffff;
+	margin: 0;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mat-card {
+	background-color: white;
+	padding: auto;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button {
+	color: $light-grey;
+}
